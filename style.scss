@@ -6,6 +6,7 @@ $pale-cyan: hsl(193, 100%, 96%);
 $dakr-cyan: hsl(192, 100%, 9%);
 $grayish-blue: hsl(208, 11%, 55%);
 
+// glabal styles
 * {
   box-sizing: border-box;
 }
@@ -14,11 +15,130 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: $dakr-cyan;
 }
 
-.icon {
-  color: black;
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Poppins', sans-serif;
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  & > div {
+    flex: 1;
+  }
+}
+
+.btn {
+  padding: 1rem 4rem;
+  background: white;
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0px 10px 11px -5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  padding: 1.5rem 4.5rem;
+  background-color: $pink;
+  color: white;
+}
+
+.box {
+  box-shadow: 0px 3px 24px -6px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 3rem;
+  background-color: white;
+
+  .content {
+    padding: 4rem;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+// content styles
+header {
+  background: url("images/bg-hero-desktop.svg") no-repeat center/ cover,
+    $pale-cyan;
+  padding: 2rem;
+}
+
+.container {
+  padding: 0 1rem;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.small-box {
+  width: 65%;
+  max-width: 47rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+footer {
+  background: $dakr-cyan;
+  padding: 180px 0 60px;
+  color: white;
+  position: relative;
+  margin-top: -85px;
+  z-index: -1;
+
+  p {
+    text-align: right;
+  }
+
+  .flex-st {
+    align-items: flex-start;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 1.1rem;
+
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .social li {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+
+    a {
+      color: $pale-cyan;
+    }
+  }
+}
