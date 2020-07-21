@@ -207,6 +207,9 @@ footer .flex-st {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: flex-sart;
+      -ms-flex-align: flex-sart;
+          align-items: flex-sart;
 }
 
 footer .flex-st .informations {
@@ -235,12 +238,33 @@ footer .flex-st .informations .row {
 footer .flex-st .informations .row .icon {
   display: block;
   width: 23px;
-  height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-right: 2rem;
 }
 
+footer .flex-st .informations .row .icon:first-child {
+  margin-top: 1.6rem;
+}
+
 footer .flex-st .menu {
-  margin: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+footer .flex-st .menu li:not(:first-child) {
+  padding-top: 1rem;
 }
 
 footer .flex-st .social li {
@@ -258,6 +282,9 @@ footer .flex-st .social li {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
 }
 
 footer .flex-st .social li a {

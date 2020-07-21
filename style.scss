@@ -188,6 +188,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: flex-sart;
 
     .informations {
       display: flex;
@@ -202,27 +203,43 @@ footer {
         .icon {
           display: block;
           width: 23px;
-          height: auto;
+          align-self: flex-start;
           margin-right: 2rem;
+
+          &:first-child {
+            margin-top: 1.6rem;
+          }
         }
       }
     }
 
     .menu {
-      margin: 20rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 0;
+      flex: 0.4;
+
+      li:not(:first-child) {
+        padding-top: 1rem;
+      }
     }
 
-    .social li {
-      border: 1px solid white;
-      border-radius: 50%;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      height: 2rem;
-      width: 2rem;
-      margin-right: 1rem;
-      a {
-        color: $pale-cyan;
+    .social {
+      li {
+        border: 1px solid white;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        flex: 0.5;
+
+        a {
+          color: $pale-cyan;
+        }
       }
     }
   }
