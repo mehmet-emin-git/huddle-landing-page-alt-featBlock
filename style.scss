@@ -19,6 +19,13 @@ body {
   color: $dakr-cyan;
 }
 
+.container {
+  padding: 0 1rem;
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
@@ -53,6 +60,7 @@ img {
   padding: 1.5rem 4.5rem;
   background-color: $pink;
   color: white;
+  margin-top: 1.5rem;
 }
 
 .box {
@@ -70,24 +78,43 @@ img {
     width: 80%;
   }
 }
+
 // content styles
 header {
   background: url("images/bg-hero-desktop.svg") no-repeat center/ cover,
     $pale-cyan;
-  padding: 2rem;
-}
+  padding: 3rem;
 
-.container {
-  padding: 0 1rem;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
+  .navigation {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
 
-nav {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+    .logo {
+      width: 14rem;
+    }
+  }
+
+  .hero {
+    justify-content: space-between;
+
+    .heading {
+      max-width: 44%;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .hero-img {
+      margin-left: 4rem;
+    }
+  }
 }
 
 .small-box {
@@ -140,5 +167,27 @@ footer {
     a {
       color: $pale-cyan;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .social {
+    flex-direction: row;
   }
 }
