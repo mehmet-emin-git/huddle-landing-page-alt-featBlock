@@ -183,28 +183,67 @@ footer {
 }
 
 footer p {
-  text-align: right;
-}
-
-footer .flex-st {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  text-align: left;
+  color: white;
 }
 
 footer ul {
   list-style-type: none;
 }
 
-footer ul li {
-  margin-bottom: 1.1rem;
+footer .flex > div {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
 }
 
-footer ul li img {
-  margin-left: 1rem;
+footer .flex-st {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer .social li {
+footer .flex-st .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+footer .flex-st .informations .row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .flex-st .informations .row .icon {
+  display: block;
+  width: 23px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+footer .flex-st .menu {
+  margin: 20rem;
+}
+
+footer .flex-st .social li {
   border: 1px solid white;
   border-radius: 50%;
   display: -webkit-inline-box;
@@ -221,8 +260,12 @@ footer .social li {
   margin-right: 1rem;
 }
 
-footer .social li a {
+footer .flex-st .social li a {
   color: #ebfbff;
+}
+
+footer .copy {
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
