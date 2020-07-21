@@ -317,6 +317,24 @@ footer .copy {
   body {
     text-align: center;
   }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   header {
     padding: 3rem 1rem 4rem 1rem;
   }
@@ -391,29 +409,97 @@ footer .copy {
     padding: 2.3vh 10vw;
     font-size: 1.2rem;
   }
-  .flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  footer {
+    text-align: left;
   }
-  .navigation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  footer .ft-logo {
+    margin-right: auto;
+    padding-left: 2rem;
   }
-  .reverse {
+  footer p {
+    text-align: left;
+    color: white;
+  }
+  footer ul {
+    font-size: 1.7rem;
+  }
+  footer .flex-st {
+    padding: 0 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  .social {
+  footer .flex-st .informations {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 1.5rem;
+  }
+  footer .flex-st .informations .address .icon {
+    width: 43px;
+  }
+  footer .flex-st .informations .row {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .flex-st .informations .row p {
+    margin: 0.5rem;
+    font-size: 1.7rem;
+  }
+  footer .flex-st .informations .icon {
+    width: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 2rem;
+  }
+  footer .flex-st .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  footer .flex-st .menu li {
+    padding-top: 0.9rem;
+  }
+  footer .flex-st .social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .flex-st .social li {
+    width: 50px;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  footer .copy {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

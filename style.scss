@@ -268,6 +268,18 @@ footer {
     text-align: center;
   }
 
+  .flex {
+    flex-direction: column-reverse;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
   header {
     padding: 3rem 1rem 4rem 1rem;
     .navigation {
@@ -358,19 +370,81 @@ footer {
     }
   }
 
-  .flex {
-    flex-direction: column-reverse;
-  }
+  footer {
+    text-align: left;
 
-  .navigation {
-    flex-direction: row;
-  }
+    .ft-logo {
+      margin-right: auto;
+      padding-left: 2rem;
+    }
 
-  .reverse {
-    flex-direction: column;
-  }
+    p {
+      text-align: left;
+      color: white;
+    }
 
-  .social {
-    flex-direction: row;
+    ul {
+      font-size: 1.7rem;
+    }
+
+    .flex-st {
+      padding: 0 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .informations {
+        justify-content: flex-start;
+        padding: 0 1.5rem;
+
+        .address .icon {
+          width: 43px;
+        }
+
+        .row {
+          display: inline-flex;
+          align-items: center;
+
+          p {
+            margin: 0.5rem;
+            font-size: 1.7rem;
+          }
+        }
+
+        .icon {
+          width: 30px;
+          align-self: center;
+          margin-right: 2rem;
+        }
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+
+        li {
+          padding-top: 0.9rem;
+        }
+      }
+
+      .social {
+        flex-direction: row;
+        align-self: center;
+
+        li {
+          width: 50px;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+      }
+    }
+
+    .copy {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
   }
 }
