@@ -17,6 +17,7 @@ body {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: $dakr-cyan;
+  height: 100%;
 }
 
 .container {
@@ -200,15 +201,14 @@ footer {
         display: inline-flex;
         align-items: center;
 
-        .icon {
-          display: block;
-          width: 23px;
-          align-self: flex-start;
-          margin-right: 2rem;
+        p {
+          margin: 0.5rem;
+        }
 
-          &:first-child {
-            margin-top: 1.6rem;
-          }
+        .icon {
+          width: 23px;
+          align-self: center;
+          margin-right: 2rem;
         }
       }
     }
@@ -245,7 +245,9 @@ footer {
   }
 
   .copy {
+    margin-top: 1rem;
     text-align: right;
+    font-size: 1rem;
   }
 }
 
@@ -254,6 +256,46 @@ footer {
     text-align: center;
   }
 
+  header {
+    padding: 3rem 1rem 4rem 1rem;
+    .navigation {
+      margin-bottom: 8rem;
+
+      .btn {
+        padding: 0.7rem 3rem;
+      }
+    }
+
+    .hero {
+      .heading {
+        max-width: 83%;
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          color: $dakr-cyan;
+          line-height: 1.6;
+          max-width: 95%;
+          margin: 2rem auto;
+        }
+      }
+
+      .btn-primary {
+        padding: 1.35rem 6.2rem;
+        font-size: 1.3rem;
+      }
+
+      .hero-img {
+        margin: 6rem 0 1rem 0;
+
+        img {
+          width: 76%;
+        }
+      }
+    }
+  }
   .flex {
     flex-direction: column;
   }
