@@ -42,6 +42,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -445,6 +450,197 @@ footer {
       margin-top: 1rem;
       text-align: center;
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    padding: 3rem 1rem 4rem 1rem;
+
+    .container {
+      padding: 0;
+    }
+
+    .navigation {
+      margin-bottom: 6rem;
+
+      .logo {
+        width: 7rem;
+      }
+
+      .btn {
+        padding: 0.4rem 1.6rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    .hero {
+      flex-direction: column;
+      .heading {
+        max-width: 90%;
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: $dakr-cyan;
+          line-height: 1.6;
+          max-width: 100%;
+          margin: 2rem auto;
+        }
+      }
+
+      .btn-primary {
+        padding: 1rem 4rem;
+        font-size: 0.9rem;
+      }
+
+      .hero-img {
+        width: 92%;
+        margin: 4rem 0 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  main {
+    .container {
+      margin-top: 12vh;
+      padding: 0 1rem;
+    }
+
+    .box {
+      padding: 4rem 1rem 2rem 1rem;
+
+      .content {
+        padding: 0;
+        margin-top: 3rem;
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 1rem;
+          max-width: 85%;
+        }
+      }
+
+      .illustration-wrapper {
+        padding: 0;
+        max-width: 82%;
+
+        img {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .small-box {
+    max-width: 88vw;
+    padding: 6vh 2vw;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      margin-top: 0.5rem;
+      padding: 2vh 10vw;
+      font-size: 0.8rem;
+    }
+  }
+
+  footer {
+    text-align: left;
+    padding-bottom: 1rem;
+
+    .ft-logo {
+      margin-right: auto;
+      padding-left: 0;
+      width: 11rem;
+    }
+
+    p {
+      text-align: left;
+      color: white;
+    }
+
+    ul {
+      font-size: 1.2rem;
+    }
+
+    .flex-st {
+      padding: 0;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .informations {
+        justify-content: flex-start;
+        padding: 0;
+
+        li:not(:first-child) {
+          margin-top: 0.8rem;
+        }
+
+        .address .icon {
+          width: 20px;
+        }
+
+        .row {
+          display: inline-flex;
+          align-items: center;
+
+          p {
+            margin: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+
+        .icon {
+          width: 30px;
+          align-self: center;
+          margin-right: 2rem;
+        }
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2.5rem 0;
+
+        li {
+          padding-top: 0.9rem;
+        }
+      }
+
+      .social {
+        flex-direction: row;
+        align-self: center;
+
+        li {
+          width: 32px;
+          height: 32px;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+      }
+    }
+
+    .copy {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.8rem;
     }
   }
 }

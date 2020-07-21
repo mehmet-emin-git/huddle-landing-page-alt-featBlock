@@ -35,6 +35,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +505,191 @@ footer .copy {
     margin-top: 1rem;
     text-align: center;
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    padding: 3rem 1rem 4rem 1rem;
+  }
+  header .container {
+    padding: 0;
+  }
+  header .navigation {
+    margin-bottom: 6rem;
+  }
+  header .navigation .logo {
+    width: 7rem;
+  }
+  header .navigation .btn {
+    padding: 0.4rem 1.6rem;
+    font-size: 0.8rem;
+  }
+  header .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .hero .heading {
+    max-width: 90%;
+  }
+  header .hero .heading h1 {
+    font-size: 1.8rem;
+  }
+  header .hero .heading p {
+    font-size: 1.1rem;
+    color: #00252e;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+  header .hero .btn-primary {
+    padding: 1rem 4rem;
+    font-size: 0.9rem;
+  }
+  header .hero .hero-img {
+    width: 92%;
+    margin: 4rem 0 0;
+  }
+  header .hero .hero-img img {
+    width: 100%;
+  }
+  main .container {
+    margin-top: 12vh;
+    padding: 0 1rem;
+  }
+  main .box {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  main .box .content {
+    padding: 0;
+    margin-top: 3rem;
+  }
+  main .box .content h2 {
+    font-size: 1.4rem;
+  }
+  main .box .content p {
+    font-size: 1rem;
+    max-width: 85%;
+  }
+  main .box .illustration-wrapper {
+    padding: 0;
+    max-width: 82%;
+  }
+  main .box .illustration-wrapper img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .small-box {
+    max-width: 88vw;
+    padding: 6vh 2vw;
+  }
+  .small-box h2 {
+    font-size: 1.1rem;
+  }
+  .small-box .btn-primary {
+    margin-top: 0.5rem;
+    padding: 2vh 10vw;
+    font-size: 0.8rem;
+  }
+  footer {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  footer .ft-logo {
+    margin-right: auto;
+    padding-left: 0;
+    width: 11rem;
+  }
+  footer p {
+    text-align: left;
+    color: white;
+  }
+  footer ul {
+    font-size: 1.2rem;
+  }
+  footer .flex-st {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .flex-st .informations {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+  footer .flex-st .informations li:not(:first-child) {
+    margin-top: 0.8rem;
+  }
+  footer .flex-st .informations .address .icon {
+    width: 20px;
+  }
+  footer .flex-st .informations .row {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .flex-st .informations .row p {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  footer .flex-st .informations .icon {
+    width: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 2rem;
+  }
+  footer .flex-st .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 2.5rem 0;
+  }
+  footer .flex-st .menu li {
+    padding-top: 0.9rem;
+  }
+  footer .flex-st .social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .flex-st .social li {
+    width: 32px;
+    height: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  footer .copy {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
