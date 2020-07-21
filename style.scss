@@ -61,6 +61,17 @@ img {
   font-size: 1rem;
   font-weight: 700;
   box-shadow: 0px 10px 11px -5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.1s ease-in all;
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 5px 11px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover {
+    background: lighten($pink, 7%);
+  }
 }
 
 .btn-primary {
@@ -68,6 +79,7 @@ img {
   background-color: $pink;
   color: white;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 // content styles
@@ -307,7 +319,7 @@ footer {
     }
 
     .box {
-      padding: 4rem 1rem 1.5rem 1rem;
+      padding: 4rem 1rem 2rem 1rem;
 
       .content {
         padding: 1.5rem;
@@ -332,6 +344,17 @@ footer {
           margin: 0 auto;
         }
       }
+    }
+  }
+
+  .small-box {
+    max-width: 88vw;
+    padding: 6vh 2vw;
+
+    .btn-primary {
+      margin-top: 0.5rem;
+      padding: 2.3vh 10vw;
+      font-size: 1.2rem;
     }
   }
 
