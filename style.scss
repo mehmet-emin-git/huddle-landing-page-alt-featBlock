@@ -111,7 +111,7 @@ main {
 
   .box {
     box-shadow: 0px 3px 24px -6px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 3rem 0;
     padding: 3rem 0.8rem 3rem 3rem;
     background-color: white;
@@ -149,7 +149,7 @@ main {
   max-width: 55vw;
   text-align: center;
   box-shadow: 0px 3px 24px -6px rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 8rem auto 0.5rem auto;
   padding: 5vh 2vw;
 
@@ -267,8 +267,10 @@ footer {
     }
 
     .hero {
+      flex-direction: column;
       .heading {
         max-width: 83%;
+
         h1 {
           font-size: 3rem;
         }
@@ -288,16 +290,53 @@ footer {
       }
 
       .hero-img {
+        width: 76%;
         margin: 6rem 0 1rem 0;
 
         img {
-          width: 76%;
+          width: 100%;
         }
       }
     }
   }
+
+  main {
+    .container {
+      margin-top: 12vh;
+      padding: 0 3rem;
+    }
+
+    .box {
+      padding: 4rem 1rem 1.5rem 1rem;
+
+      .content {
+        padding: 1.5rem;
+
+        h2 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 75%;
+          margin: 0 auto;
+        }
+      }
+
+      .illustration-wrapper {
+        padding: 0;
+        max-width: 82%;
+
+        img {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
   .flex {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .navigation {
@@ -305,7 +344,7 @@ footer {
   }
 
   .reverse {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .social {
