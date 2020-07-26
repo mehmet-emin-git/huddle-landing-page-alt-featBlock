@@ -228,9 +228,9 @@ footer .flex-st {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: flex-sart;
-      -ms-flex-align: flex-sart;
-          align-items: flex-sart;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer .flex-st .informations {
